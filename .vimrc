@@ -47,7 +47,7 @@ filetype plugin indent on
 nnoremap <silent> <space>p :Files<CR>
 nnoremap <silent> <space>g :Rg<CR>
 nnoremap <silent> <space>e :History<CR>
-nnoremap <silent> <space>t :vsp<CR>
+nnoremap <silent> <space>t :vertical term<CR>
 nnoremap <silent> <space>o :Ex<CR>
 nnoremap <silent> <space>c :noh<CR>
 
@@ -63,9 +63,9 @@ set background=dark
 " Base and UI
 hi Normal        ctermfg=180 ctermbg=232 guifg=#d0c4a0 guibg=#0c0c0c
 hi Comment       ctermfg=245 cterm=italic guifg=#868d80 gui=italic
-hi CursorLine    cterm=NONE gui=NONE ctermbg=Blue guibg=#0a1d69
+hi CursorLine    cterm=NONE gui=NONE ctermbg=Blue guibg=#0a1754
 
-hi Visual        ctermbg=238 guibg=#333333
+hi Visual        ctermbg=238 guibg=#0a1754
 hi Search        ctermbg=228 guibg=#f4d798
 hi Directory     ctermfg=39  guifg=#00afff
 
