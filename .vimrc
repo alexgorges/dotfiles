@@ -76,7 +76,7 @@ hi Statement     ctermfg=172 guifg=#d87c00
 hi Conditional   ctermfg=172 guifg=#d87c00
 hi Repeat        ctermfg=172 guifg=#d87c00
 hi Label         ctermfg=172 guifg=#d87c00
-hi String        ctermfg=108 guifg=#187a32
+hi String        ctermfg=108 guifg=#6c996a
 
 " Force everything else to beige (including parens and punctuation)
 hi Function      ctermfg=180 guifg=#d0c4a0
