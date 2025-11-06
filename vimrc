@@ -92,7 +92,7 @@ hi PreProc       ctermfg=180 guifg=#d0c4a0
 hi Special       ctermfg=180 guifg=#d0c4a0
 hi Underlined    ctermfg=180 guifg=#d0c4a0
 hi Error         ctermfg=180 guifg=#d0c4a0
-hi Todo          ctermfg=180 guifg=#d0c4a0
+hi Todo ctermfg=white ctermbg=red guifg=#ffffff guibg=#ff0000 gui=bold
 hi Delimiter     ctermfg=180 guifg=#d0c4a0
 
 set guicursor=
