@@ -6,6 +6,8 @@ call plug#end()
 
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
+
+
 set mouse=
 set cursorline
 
@@ -39,10 +41,8 @@ set smartcase
 set splitright
 
 syntax on
-
 filetype off
 filetype plugin indent on
-
 inoremap { {}<left> 
 nnoremap <silent> <space>p :Files<CR>
 nnoremap <silent> <space>g :Rg<CR>
@@ -50,6 +50,17 @@ nnoremap <silent> <space>e :History<CR>
 nnoremap <silent> <space>t :vertical term<CR>
 nnoremap <silent> <space>o :Ex<CR>
 nnoremap <silent> <space>c :noh<CR>
+
+let g:vim_start_dir = getcwd()
+function! RunExecutable(filename)
+  let l:path = g:vim_start_dir . '/' . a:filename
+  if filereadable(l:path) && executable(l:path)
+    " Run it directly
+    execute '!' . fnameescape(l:path)
+  endif
+endfunction
+nnoremap <silent> <space>r :call RunExecutable('build.sh')<CR>
+
 
 set backspace=indent,eol,start
 set encoding=utf-8
