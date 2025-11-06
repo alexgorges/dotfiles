@@ -1,14 +1,13 @@
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
 set mouse=
 set cursorline
-
-inoremap { {}<left>
 
 " keep cursor position
 " taken from :help restore-cursor
@@ -44,6 +43,10 @@ syntax on
 filetype off
 filetype plugin indent on
 
+" basic autocomplete remap
+inoremap <space>f <C-p>
+
+inoremap { {}<left> 
 nnoremap <silent> <space>p :Files<CR>
 nnoremap <silent> <space>g :Rg<CR>
 nnoremap <silent> <space>e :History<CR>
