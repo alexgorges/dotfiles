@@ -43,9 +43,6 @@ syntax on
 filetype off
 filetype plugin indent on
 
-" basic autocomplete remap
-inoremap <space>f <C-p>
-
 inoremap { {}<left> 
 nnoremap <silent> <space>p :Files<CR>
 nnoremap <silent> <space>g :Rg<CR>
